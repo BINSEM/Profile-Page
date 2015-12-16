@@ -1,0 +1,17 @@
+body {
+	display: 600px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/60/Red_Giant_Earth.jpg);
+   
+}
+.left-div {
+	float: left;
+	width: 100px;
+	height: 20px;
+	margin-right: 8px;
+	background-color: linen;
+}
+.right-div {
+	float: right;
+	margin-left: 108px;
+	background-color: skyblue;
+}​
