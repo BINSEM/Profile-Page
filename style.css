@@ -1,9 +1,13 @@
 body {
 	background-color: #000000;
+	margin: 0px;
 }
 header {
 	background-image: url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Cool-Wallpapers.jpg");
 	text-align: center;
+	font-size: 40px;
+	padding-top: 2px;
+	padding-bottom: 100px;
 }
 img {
 	display: block;
@@ -19,16 +23,26 @@ header p {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+header h2 {
+	font-size: 70px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	//text-transform: uppercase;
+}
+h2 p {
+    font-size: 40px;
+}
 .menu {
-	background-color: #B9CDE6;
+	background-image: url("http://4hdwallpapers.com/wp-content/uploads/2013/04/Cool-Wallpapers.jpg");
 }
 .menu button {
 	background-color: transparent;
 	font-family: "Times New Roman", Times, serif;
-	width: 100px;
-	height: 70px;
+	width: 200px;
+	height: 40px;
 	margin: 2px;
 	border-radius: 10px;
+	font-size: 20px;
 }
 .former {
 	width: 940px;
@@ -39,7 +53,7 @@ header p {
 .left-div {
 	float: left;
 	width: 700px;
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-bottom: 100px;
 	background-color: transparent;
 	color: #E0C6C6;
@@ -47,6 +61,7 @@ header p {
 	text-align: center;
 	border-bottom-style: inset;
 	border-top: thick solid #EEEEEE;
+	font-size: 20px;
 }
 .left-div button {
 	background-color: #8989E0;
@@ -56,19 +71,26 @@ header p {
 .right-div {
 	float: right;
 	width: 200px;
-	margin-top: 50px;
+	margin-top: 80px;
 	background-color: transparent;
 	border-radius: 10px;
 	border-style: 3px solid #EEEEEE;
 	border-bottom-style: inset;
 	border-top: thick solid #EEEEEE;
+	padding-right: 30px;
+	list-style-type: none;
 }
 .right-div button {
 	background-color: #8989E0; 
 	margin: 2px;
-	width: 125px;
+	width: 200px;
 	border-radius: 10px;
 	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding: 5px;
+}
+.right-div h1 {
+	font-size: 50px;
 }
 .lastfoot {
 	background-color: transparent;
@@ -93,4 +115,40 @@ button:active {
 }
 button:hover {
 	background-color: #05F588;
+}
+.scroll-top-wrapper {
+    position: fixed;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
 }

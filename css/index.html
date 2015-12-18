@@ -6,14 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<script src="node_modules/zepto/zepto.min.js"></script>
-	<script src="mustache.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
-	<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
 </head>
 <body class="fullpage">
 	<div class="menu">
-		<a href="index.html"><button class="button button-icon ion-android-search" 
-		ng-click="vm.showFilterBar()">Home</button></a>
+		<button class="button button-icon ion-android-search" 
+		ng-click="vm.showFilterBar()"><a href="index.html">Home</a></button>
 		<button class="button button-icon ion-android-search" 
 		ng-click="vm.showFilterBar()"><a href="Human.html">Human Influence</a></button>
 		<button class="button button-icon ion-android-search" 
@@ -23,27 +21,19 @@
 	</div>
 	<header>
 		<img src="http://moldremovalalbany.com/wp-content/uploads/2012/11/green-earth-globe.jpg" alt="">
-		<script id="template" type="x-tmpl-mustache">
-		<h2>{{first_name}}
-			{{last_name}}</br></h2>
-			{{occupation}}</br>
-			{{badges}}</br>
-			{{contact.email}}</br>
-			{{contact.website}}
-		</script>
-		<div id="cible"></div>
+		<h2><span elt="first_name"></span> 
+			<span elt="last_name"></span></h2>
 			<P>WHAT HAPPEN IN FUTURE</P>
 			<P>BIO or CHEMIC LIFE</P>
 		</header>
 		<section class="container">
 			<form class="former">
 				<div id="paragraph" class="left-div">
-					<h1>FUTURE DEPENDE</h1>
+					<h2>FUTURE DEPENDE</h2>
 					<p>The biological and geological future of the Earth can be extrapolated based upon the estimated effects of several long-term influences. These include the chemistry at the Earth's surface, the rate of cooling of the planet's interior, the gravitational interactions with other objects in the Solar System, and a steady increase in the Sun's luminosity. An uncertain factor in this extrapolation is the ongoing influence of technology introduced by humans, such as climate engineering,[2] which could cause significant changes to the planet.[3][4] The current Holocene extinction[5] is being caused by technology[6] and the effects may last for up to five million years.[7] In turn, technology may result in the extinction of humanity, leaving the planet to gradually return to a slower evolutionary pace resulting solely from long-term natural processes.</p>
-					<p></p>
-					<button class="pure"><a href="Human.html">Human Influence</a></button>
-					<button class="pure"><a href="Random.html">Random Events</a></button>
-					<button class="pure"><a href="Orbit.html">Orbit and Rotation</a></button>
+					<button class="pure-button pure-button-active"><a href="Human.html">Human Influence</a></button>
+					<button class="pure-button pure-button-active"><a href="Random.html">Random Events</a></button>
+					<button class="pure-button pure-button-active"><a href="Orbit.html">Orbit and Rotation</a></button>
 				</div>
 				<div id="list" class="right-div">
 					<ul>
@@ -59,10 +49,5 @@
 					</footer>
 				</form>
 			</section>
-			<div class="scroll-top-wrapper " id="sampleArea">
-				<span class="scroll-top-inner">
-					<i class="fa fa-2x fa-arrow-circle-up"></i>
-				</span>
-			</div>
 		</body>
 		</html>

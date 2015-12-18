@@ -1,0 +1,11 @@
+{
+	"id" : "5",
+	"first_name" : "BINIAM",
+	"last_name" : "Semere",
+	"occupation" : "student",
+	"badges" : "table",
+	"contact" : {
+		"email" : "binsem25@hotmail.com",
+		"website" : "www.simplon.co"
+	}
+}
